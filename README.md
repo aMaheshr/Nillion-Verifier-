@@ -46,8 +46,7 @@ mkdir -p nillion/accuser
 ```console
 docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 initialise
 ```
-- u can check Credentials list
-  ```console sudo cat /root/nillion/accuser/credentials.json ```
+- u can check Credentials list : sudo cat /root/nillion/accuser/credentials.json 
 - Register using pub_key & Address : https://verifier.nillion.com/verifier
 - Claim faucet with ur new Address
 
