@@ -57,7 +57,8 @@ docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 init
 ```console
 docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start 5105545
 ```
-
+- any RPC Error first stop Docker & remove given below Cmds & change rpc 
+---------------------------------------------------------------------------------------------
 ### check Logs
 
 ```console
@@ -68,6 +69,14 @@ docker ps
 
 ```console
 docker logs -f <your container ID>
+```
+### Stop Docker 
+
+```console
+docker stop <Container id>
+```
+```console
+docker rm <container id>
 ```
 
 Thats it 🎉
